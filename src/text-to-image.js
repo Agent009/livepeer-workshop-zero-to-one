@@ -1,7 +1,8 @@
 import { Livepeer } from "@livepeer/ai";
+import { constants } from "./lib/constants.js";
 
 const livepeerAI = new Livepeer({
-  httpBearer: "",
+  httpBearer: constants.httpBearer,
 });
 
 async function run() {

@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { Livepeer } from "@livepeer/ai";
+import { constants } from "../src/lib/constants.js";
 
 const livepeerAI = new Livepeer({
   httpBearer: "",
@@ -8,7 +9,7 @@ const livepeerAI = new Livepeer({
 async function run(prompt) {
   const result = await livepeerAI.generate.textToImage({
     prompt,
-    modelId: "black-forest-labs/FLUX.1-dev",
+    modelId: constants.modelId || "black-forest-labs/FLUX.1-dev",
     width: 1024,
     height: 1024,
   });

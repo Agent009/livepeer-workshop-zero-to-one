@@ -1,9 +1,12 @@
 {
-  "name": "workshop-zero-to-one",
+  "name": "livepeer-workshop-zero-to-one",
   "version": "1.0.0",
   "description": "Begin building with Livepeer AI",
   "main": "src/app.ts",
   "scripts": {
+    "text-to-image": "node src/text-to-image.js",
+    "image-to-image": "node src/image-to-image.js",
+    "upscale": "node src/upscale.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",

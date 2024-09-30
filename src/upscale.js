@@ -1,8 +1,9 @@
 import { Livepeer } from "@livepeer/ai";
 import { openAsBlob } from "node:fs";
+import { constants } from "./lib/constants.js";
 
 const livepeer = new Livepeer({
-  httpBearer: "",
+  httpBearer: constants.httpBearer,
 });
 
 async function run() {
